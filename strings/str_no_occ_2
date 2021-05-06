@@ -1,0 +1,7 @@
+#Program to find the number of occurrences of each character present in the given string without using count() method
+
+s='aaabbccc'
+d={}
+for ch in s:
+    d[ch]=d.get(ch,0)+1
+    print(d)
