@@ -146,24 +146,6 @@ for j in d.values():
         print(k)
 
 print(d)"""
-#-----------------------------------
-"""class fun():
-    def __init__(self,filename,mode):
-        self.filename = filename
-        self.mode = mode
-
-    def __enter__(self):
-        self.file = open(self.filename,self.mode)
-        return self.file
-
-    def __exit__(self,type,val,traceback):
-        self.file.close()"""
-
-
-"""with open("sample.txt","r") as f:
-    print(f.read())
-
-print(f.closed)"""
 #----------------------------------------------------------------------
 
 """
