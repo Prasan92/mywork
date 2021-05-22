@@ -1,44 +1,4 @@
 
-
-class Employee:
-    def __init__(self,name,age,pay):
-        self.name = name
-        self.age = age
-        self.pay = pay
-
-
-class Developer(Employee):
-    def __init__(self,name,age,pay,prog_lang):
-        super().__init__(name,age,pay)
-        self.prog_lang = prog_lang
-
-
-class Manager(Employee):
-    def __init__(self,name,age,pay,employee = None):
-        super().__init__(name,age,pay)
-        if employee is None:
-            self.employee = []
-        else:
-            self.employee = employee
-
-    def add_emp(self,emp):
-        if emp not in self.employee:
-            self.employee.append(emp)
-            print (self.employee)
-
-
-
-
-dev_1 = Developer("prasanna",25,25000,"python")
-dev_2 = Developer("kannan",30, 30000,"java")
-
-mgr_1 = Manager("ragu",35,50000,[dev_1])
-
-
-print(mgr_1.employee)
-
-
-
 """
 #Program for the requirement,input: aaaabbbccz and expected output: 4a3b2c1z:
 s = "aaaabbbccz"
