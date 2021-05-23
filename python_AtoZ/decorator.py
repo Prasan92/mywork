@@ -10,7 +10,7 @@ def deco(f):
                 raise Exception ("pass either int or float")
             if b==0:
                 raise Exception ("divisible value shouldn't be zero")
-            return f(a,b)
+            return f(*args)
         except Exception as e:
             return e
     return inner
