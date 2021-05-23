@@ -9,7 +9,7 @@ def deco(f):
             if not (type(a) in [int,float] and type(b) in [int,float]):
                 raise Exception ("pass either int or float")
             if b==0:
-                raise Exception ("divisibe value shouldn't be zero")
+                raise Exception ("divisible value shouldn't be zero")
             return f(a,b)
         except Exception as e:
             return e
