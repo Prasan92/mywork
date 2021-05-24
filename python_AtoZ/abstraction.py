@@ -42,15 +42,15 @@ while True:
     print("enter 3 to return a book")
     print("enter 4 to exit")
     userchoice = int(input())
-    if userchoice is 1:
+    if userchoice == 1:
         lib.display_books()
-    elif userchoice is 2:
+    elif userchoice == 2:
         requestedbook = cus.request_books()
         lib.lend_books(requestedbook)
-    elif userchoice is 3:
+    elif userchoice == 3:
         returnedbook = cus.return_books()
         lib.add_books(returnedbook)
-    elif userchoice is 4:
+    elif userchoice == 4:
         quit()
 
 
